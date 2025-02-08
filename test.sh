@@ -29,11 +29,11 @@ else
 fi
 
 # Test 3: Ověříme, že kontejner s názvem "dencapod" běží.
-if ! docker ps --filter "name=^dencapod$" --format "{{.Names}}" | grep -q '^dencapod$'; then
-  echo -e "${RED}${CROSS_MARK} ERROR: Kontejner s názvem 'dencapod' neběží.${NC}"
+if ! docker ps --filter "name=^flasktest$" --format "{{.Names}}" | grep -q '^flasktest$'; then
+  echo -e "${RED}${CROSS_MARK} ERROR: Kontejner s názvem 'flasktest' neběží.${NC}"
   exit 1
 else
-  echo -e "${GREEN}${CHECK_MARK} Kontejner 'dencapod' běží.${NC}"
+  echo -e "${GREEN}${CHECK_MARK} Kontejner 'flasktest' běží.${NC}"
 fi
 
 # Test 4: Ověříme, že na portu 8000 něco naslouchá (použijeme nc).
