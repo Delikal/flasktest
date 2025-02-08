@@ -22,3 +22,7 @@ Níže naleznete zadání pro vytvoření projektu, který spouští jednoduchý
 - **Při spuštění kontejneru:**
   - Namountuj lokální složku `app` do `/app` v kontejneru.
   - Pojmenuj kontejner `flasktest`.
+
+- **Pro testování použij test.sh:**
+  - Ten zapneš pomocí sudo chmod +x test.sh
+  - A potom ./test.sh
